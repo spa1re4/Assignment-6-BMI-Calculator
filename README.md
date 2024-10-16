@@ -4,35 +4,3 @@ Calculate BMI based on weight and height.
 Switch between metric (kg/m) and imperial (lb/in) units.
 Display BMI categories (Underweight, Normal, Overweight, Obese)
 Exit the application with an "Exit" button.
-
-
-
-The application calculates BMI using the formula:
-Metric Units: 
-BMI
-=
-weight (kg)
-height (m)
-2
-BMI= 
-height (m) 
-2
- 
-weight (kg)
-​
- 
-English Units: 
-BMI
-=
-703
-×
-weight (lbs)
-height (in)
-2
-BMI=703× 
-height (in) 
-2
- 
-weight (lbs)
-​
-
