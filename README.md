@@ -1,6 +1,40 @@
 # Assignment-6-BMI-Calculator
-The BMI Calculator is a simple JavaFX application designed to allow users to calculate their Body Mass Index (BMI) based on their height and weight. It provides an interactive user interface that makes it easy for users to input their data and receive immediate feedback about their BMI status.
-Calculate BMI based on weight and height.
-Switch between metric (kg/m) and imperial (lb/in) units.
-Display BMI categories (Underweight, Normal, Overweight, Obese)
-Exit the application with an "Exit" button.
+```
+This project is a Body Mass Index (BMI) Calculator built using JavaFX. The calculator allows users to input their height and weight, calculates their BMI, and displays their BMI status. It supports both metric and imperial units with a unit switcher.
+
+Main Features:
+Graphical User Interface (GUI):
+
+Input fields for height and weight.
+A unit switcher (implemented with a RadioButton) to toggle between metric units (kg/m) and imperial units (lb/in).
+A calculate button that computes the BMI.
+Output fields for the BMI value and the corresponding BMI status (e.g., "Normal", "Underweight").
+A clear function to reset all input and output fields.
+A close button to exit the application.
+Controller (HelloController):
+
+The HelloController class handles user input and coordinates actions like BMI calculation, clearing fields, and closing the application.
+BMI Calculation:
+When the user clicks "Calculate," the calculate() method reads the height and weight input, and based on the unit selection, calculates the BMI.
+For metric units, the formula is: BMI = weight / (height * height).
+For imperial units, the formula is: BMI = 703 * weight / (height * height).
+The result is then displayed in the BMI output field along with the status (Underweight, Normal, Overweight, or Obese), depending on the BMI value.
+Logic for BMI Status:
+
+BMI VALUES
+Underweight:	less than 18.5
+Normal:	between 18.5 and 24.9
+Overweight:	between 25 and 29.9
+Obese:	30 or greater
+
+ActionEvent: For the calculate button, which triggers the BMI computation.
+MouseEvent: For the clear and close buttons, which reset inputs or close the application.
+Technologies Used:
+Java: Core language for logic and handling events.
+JavaFX: Used to build the graphical user interface (GUI).
+FXML: (If used) For designing the UI layout and binding to the controller methods.
+```
+![Image Alt](https://github.com/spa1re4/Assignment-6-BMI-Calculator/blob/a6f204fd2694ecf1b91aafdd263e67795ef3436c/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-10-16%20215738.png)
+![Image Alt](https://github.com/spa1re4/Assignment-6-BMI-Calculator/blob/a6f204fd2694ecf1b91aafdd263e67795ef3436c/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-10-16%20222209.png)
+![Image Alt](https://github.com/spa1re4/Assignment-6-BMI-Calculator/blob/a6f204fd2694ecf1b91aafdd263e67795ef3436c/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-10-16%20222238.png)
+![Image Alt](https://github.com/spa1re4/Assignment-6-BMI-Calculator/blob/a6f204fd2694ecf1b91aafdd263e67795ef3436c/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-10-16%20222314.png)
